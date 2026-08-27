@@ -1,5 +1,5 @@
 context:
-  version: "0.8.0"
+  version: "0.8.1"
 
 package:
   name: transports
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/transports/transports-${{ version }}.tar.gz
-  sha256: fa676751457aaf51225b09a6a4b27b6cabfa9dc893218044f26c6bc95c1dde20
+  sha256: 4ad11d4ae9a2bd4332713f9a33fcdf368d8ea1f1d0f6bfc0d93a0fb5c6c01f5c
 
 build:
   number: 0
@@ -50,7 +50,7 @@ requirements:
     - pnpm
     - if: is_abi3
       then:
-      - python-abi3
+        - python-abi3
   run:
     - python
     - bigbrother >=0.1.4
