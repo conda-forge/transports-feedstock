@@ -1,5 +1,5 @@
 context:
-  version: "0.8.6"
+  version: "0.9.0"
 
 package:
   name: transports
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/transports/transports-${{ version }}.tar.gz
-  sha256: 58b43d9b515581ecb62a330721e86275a55017cc807ad1c8d639e5a5561bd817
+  sha256: e5b8a88527c11d3af56b6716e642db2cec1e542532d504c6949afa584642b46f
 
 build:
   number: 0
@@ -40,7 +40,7 @@ requirements:
     - ${{ stdlib("c") }}
     - ${{ compiler('rust') }}
     - rust-std-wasm32-unknown-unknown
-    - wasm-bindgen-cli ==0.2.126
+    - wasm-bindgen-cli ==0.2.127
     - cargo-bundle-licenses
     - if: linux
       then:
