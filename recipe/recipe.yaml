@@ -40,7 +40,7 @@ requirements:
     - ${{ stdlib("c") }}
     - ${{ compiler('rust') }}
     - rust-std-wasm32-unknown-unknown
-    - wasm-bindgen-cli ==0.2.126
+    - wasm-bindgen-cli ==0.2.127
     - cargo-bundle-licenses
     - if: linux
       then:
