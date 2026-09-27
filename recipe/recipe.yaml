@@ -1,5 +1,5 @@
 context:
-  version: "0.9.0"
+  version: "0.10.0"
 
 package:
   name: transports
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/transports/transports-${{ version }}.tar.gz
-  sha256: e5b8a88527c11d3af56b6716e642db2cec1e542532d504c6949afa584642b46f
+  sha256: 0788cad98529c727df614a32b00a0a28e6f1dfe2ec8003e0ca3a7014d2bd7df1
 
 build:
   number: 0
