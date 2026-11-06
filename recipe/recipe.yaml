@@ -1,5 +1,5 @@
 context:
-  version: "0.11.0"
+  version: "0.12.0"
 
 package:
   name: transports
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/transports/transports-${{ version }}.tar.gz
-  sha256: 00193ca2f71f02c7dcba42b1d9f6dbcf26fe4660e75374d227b4faf207879adf
+  sha256: 91263f8f501ff620cc81dd4bf18b5dd6da4c9e708fea568bd5a340e1f5f9b983
 
 build:
   number: 0
@@ -34,7 +34,7 @@ requirements:
         - crossenv
         - hatchling
         - hatch-js
-        - hatch-rs
+        - hatch-rs >=0.3.0
         - pnpm
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
@@ -50,7 +50,7 @@ requirements:
     - pip
     - hatchling
     - hatch-js
-    - hatch-rs
+    - hatch-rs >=0.3.0
     - pnpm
     - if: is_abi3
       then:
