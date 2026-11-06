@@ -34,7 +34,7 @@ requirements:
         - crossenv
         - hatchling
         - hatch-js
-        - hatch-rs
+        - hatch-rs >=0.3.0
         - pnpm
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
@@ -50,7 +50,7 @@ requirements:
     - pip
     - hatchling
     - hatch-js
-    - hatch-rs
+    - hatch-rs >=0.3.0
     - pnpm
     - if: is_abi3
       then:
